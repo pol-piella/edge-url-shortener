@@ -16,9 +16,6 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .executableTarget(
             name: "EdgeURLShortener",
-            dependencies: ["Compute"]),
-        .testTarget(
-            name: "EdgeURLShortenerTests",
-            dependencies: ["EdgeURLShortener"]),
+            dependencies: ["Compute"])
     ]
 )
