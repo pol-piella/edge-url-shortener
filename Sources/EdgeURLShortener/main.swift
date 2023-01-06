@@ -1,4 +1,5 @@
 import Compute
+import Upstash
 
 try await onIncomingRequest { req, res in
     let secrets = try ConfigStore(name: "secrets")
